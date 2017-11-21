@@ -14,10 +14,10 @@ p_load(tidyverse,stringr,data.table)
 #***************** Loading adn refactoring the original data *****************#
 
 #air_data_orig <- read.table(file = 'E:/Masters/Semester_3/LAB/Project/Dataset/EuroStat/rail.tsv', sep = '\t', header = TRUE)
-inland_data_orig <- read.table(file = 'E:/Masters/Semester_3/LAB/Project/Dataset/EuroStat/inland.tsv', sep = '\t', header = TRUE)
-rail_data_orig <- read.table(file = 'E:/Masters/Semester_3/LAB/Project/Dataset/EuroStat/rail.tsv', sep = '\t', header = TRUE)
-road_data_orig <- read.table(file = 'E:/Masters/Semester_3/LAB/Project/Dataset/EuroStat/road.tsv', sep = '\t', header = TRUE)
-sea_data_orig <- read.table(file = 'E:/Masters/Semester_3/LAB/Project/Dataset/EuroStat/sea.tsv', sep = '\t', header = TRUE)
+inland_data_orig <- read.table(file = 'E:/Dataviz-20171116T170106Z-001/Dataviz/inland.tsv', sep = '\t', header = TRUE)
+rail_data_orig <- read.table(file = 'E:/Dataviz-20171116T170106Z-001/Dataviz/rail.tsv', sep = '\t', header = TRUE)
+road_data_orig <- read.table(file = 'E:/Dataviz-20171116T170106Z-001/Dataviz/road.tsv', sep = '\t', header = TRUE)
+sea_data_orig <- read.table(file = 'E:/Dataviz-20171116T170106Z-001/Dataviz/sea.tsv', sep = '\t', header = TRUE)
 
 # #air_restructured_data <- gather(data, yr, cnt, X2005:X2016) %>% filter(!grepl("^TOTAL.*THS.*$", tra_cov.unit.geo.time))
 inland_restructured_data <- gather(inland_data_orig, yr, cnt, X2005:X2016) %>%
